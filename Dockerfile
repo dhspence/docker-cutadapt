@@ -16,4 +16,4 @@ RUN mkdir /opt/cutadapt
 RUN pip install --install-option="--prefix=/opt/cutadapt" --upgrade cutadapt && \
     cp /opt/cutadapt/bin/cutadapt /usr/bin/cutadapt
 
-ENV PATH "$PYHTONPATH:/opt/cutadapt/lib/python2.7/site-packages/"
+ENV PATH "/opt/cutadapt/lib/python2.7/site-packages/:$PYHTONPATH"
